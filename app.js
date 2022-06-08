@@ -34,6 +34,7 @@
 
 let fragmento = document.createDocumentFragment();
 let contenedor = document.querySelector(".contenedor_fichas");
+let contenedorJd = document.querySelector(".grid");
 
 
 
@@ -105,5 +106,34 @@ let peticion = fetch("directoriojl.json")
 let segudaPeticion = fetch("directoriojds.json")
     .then(res2 => res2.json())
     .then(res => {
-        console.log(res);
+        
+
+        let obj = res.jd1;
+        console.log(obj);
+        for (const vocal in obj) {
+            let gridCelda = document.createElement("div");
+            let gridBody = document.createElement("div");
+            
+            let gridImage = document.createElement("div");
+            let img = document.createElement("img");
+            
+            let gridTextos = document.createElement("div");
+            let nombre = document.createElement("p");
+            let appaterno = document.createElement("p");
+            let apmaterno = document.createElement("p");
+            let email = document.createElement("p");
+            
+            let rutaImagen = obj[vocal].foto;
+            img.src = rutaImagen;
+            
+            gridImage.appendChild(img);
+            
+
+
+
+            if(vocal == 6 ){
+                console.log("estoy en direccion");
+            }
+        }  
+
     })

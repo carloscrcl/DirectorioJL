@@ -1,5 +1,5 @@
 {
-  "1":[
+  "jd1":[
       
       {   
           "foto":"imagenes/jd/jd1/ve.png",
@@ -41,14 +41,7 @@
           "apmaterno":"Robelo",
           "email":"aldo.cuellar@ine.mx"
       },
-      {   
-          "foto":"imagenes/jd/jd1/vrfe.png",
-          "cargo":"vrfe",
-          "nombres": "Aldo",
-          "appaterno":"Cuellar",
-          "apmaterno":"Robelo",
-          "email":"aldo.cuellar@ine.mx"
-      },
+      
       {   
           "foto":"imagenes/jd/jd1/josa.png",
           "cargo":"vrfe",

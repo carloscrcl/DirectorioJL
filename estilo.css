@@ -166,12 +166,11 @@ margin-top: 12px;
       
         .grid_titulog{
             display: flex;
-            width: auto;
+            /* width: auto; */
             justify-content: center;
             align-items: center;
             padding-left: 8px ;
             padding-right: 8px ;
-            
             height: 50px;
             background: #CE0082;
             color: #fff;
@@ -180,7 +179,7 @@ margin-top: 12px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 130px;
+            height: 120px;
             
         }
         .grid_imagen{
@@ -191,19 +190,20 @@ margin-top: 12px;
         .grid_imagen img{
             /* outline: 2px solid #CE0082; */
             width: 50px ;
-            height: 66px;
+            height: 70px;
         }
         .grid_textos{
-            padding:8px ;
+            padding:6px ;
         }
         .grid_textos p{
-            font-size: .8em;
+            font-size: .85em;
             margin-bottom: 2px;
         }
         .grid_textos .encargado{
             font-size: .8em;
             margin-bottom: 2px;
             color: #CE0082;
+            font-weight: 700;
             font-weight: 500;
         }
 
@@ -211,6 +211,7 @@ margin-top: 12px;
             font-size: .7em;
             margin-top: 5px;
             color: #CE0082;
+            font-weight: 600;
         }
 
         .grid_direccion  {
