@@ -150,8 +150,10 @@ margin-top: 12px;
 
 
 .grid{
+    background: #fff;
     display: grid;
-    width: 1350px;
+    width: 1400px;
+    margin: auto;
     row-gap:  3px;
     /* padding: 5px; */
     grid-template-columns: repeat(9,1fr); 
@@ -174,13 +176,14 @@ margin-top: 12px;
             height: 50px;
             background: #CE0082;
             color: #fff;
+            /* margin-top: 10px; */
         }
         .grid_body{
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 120px;
-            
+            height: 110px;
+            border: 2px solid #CE0082;
         }
         .grid_imagen{
             padding-top: 8px;
@@ -193,7 +196,9 @@ margin-top: 12px;
             height: 70px;
         }
         .grid_textos{
+            min-width:max-content;
             padding:6px ;
+
         }
         .grid_textos p{
             font-size: .85em;
