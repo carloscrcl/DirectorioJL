@@ -119,6 +119,20 @@ let segudaPeticion = fetch("directoriojds.json")
         let cp = document.createElement("p");
         let mpio = document.createElement("p");
 
+        let gridC = document.createElement("div");
+                let adscripcion = document.createElement("div");
+                let ads = obj[8]["junta"];
+                console.log(ads);
+                let p =  document.createElement("p");
+                p.textContent = ads.id +" " + ads.ubiciacion; 
+                
+                adscripcion.appendChild(p);
+
+                gridC.appendChild(adscripcion);
+                fragmento.appendChild(gridC);
+                contenedorJd.appendChild(fragmento);
+
+
         for (const vocal in obj) {
             
             if(vocal == 6 ){
@@ -169,17 +183,7 @@ let segudaPeticion = fetch("directoriojds.json")
             else{
 
                 
-                let gridC = document.createElement("div");
-                let adscripcion = document.createElement("div");
-                let ads = obj["junta"][vocal].junta;
-                let p =  document.createElement("p");
-                p.textContent = ads.id +" " + ads.ubiciacion; 
                 
-                adscripcion.appendChild(p);
-
-                gridC.appendChild(adscripcion);
-                fragmento.appendChild(gridC);
-                contenedorJd.appendChild(fragmento);
                 
                                   
 
