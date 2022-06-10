@@ -111,9 +111,28 @@ let segudaPeticion = fetch("directoriojds.json")
       for (let i = 0; i < 1; i++) {
                
         let obj = res["jd"+(i+1)];
-       
+        
         for (const vocal in obj) {
+          
+          if(vocal == 0){
+                              
+            let id = obj[vocal]["junta"].id;
+            let ubic = obj[vocal]["junta"].ubicacion;
             
+            if(id < 10){
+              id = "0"+id;
+            }
+            console.log(id +" "+ ubic);
+            let gridCelda = document.createElement("div");
+            let gridBodyAds = document.createElement("div");
+            let p = document.createElement("p");
+            p. textContent = id +" "+ubic;
+            
+            gridBodyAds.appendChild(p);
+            gridCelda.appendChild(gridBodyAds);
+            fragmento.appendChild(gridCelda);
+            contenedorJd.appendChild(fragmento);
+          }
             if(vocal == 7 ){
 
               let calle = document.createElement("p");
@@ -164,25 +183,6 @@ let segudaPeticion = fetch("directoriojds.json")
                 contenedorJd.appendChild(fragmento);
               
               
-            }
-            if(vocal == 0){
-                                
-              let id = obj[vocal]["junta"].id;
-              let ubic = obj[vocal]["junta"].ubicacion;
-              
-              if(id < 10){
-                id = "0"+id;
-              }
-              console.log(id +" "+ ubic);
-              let gridCelda = document.createElement("div");
-              let gridBodyAds = document.createElement("div");
-              let p = document.createElement("p");
-              p. textContent = id +" "+ubic;
-              
-              gridBodyAds.appendChild(p);
-              gridCelda.appendChild(gridBodyAds);
-              fragmento.appendChild(gridCelda);
-              contenedorJd.appendChild(fragmento);
             }
             
             
