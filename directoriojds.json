@@ -1,6 +1,13 @@
 {
   "jd1": [
-      
+     {
+        "junta":[{
+            "id":1,
+            "ubicacion":"Pánuco"
+        }
+
+        ]
+      },
       
       {   
           "foto":"imagenes/jd/jd1/ve1.png",
@@ -8,7 +15,8 @@
           "nombres": "Armando",
           "appaterno":"Cuacua",
           "apmaterno":"Lares",
-          "email":"Armando.cuacua@ine.mx"
+          "email":"Armando.cuacua@ine.mx",
+          "status":"e"
       },
       {   
           "foto":"imagenes/jd/jd1/vs1.png",
@@ -16,7 +24,8 @@
           "nombres": "Gloria Adriana",
           "appaterno":"del Ángel",
           "apmaterno":"del Ángel",
-          "email":"gloria.delangel@ine.mx"
+          "email":"gloria.delangel@ine.mx",
+          "status":"p"
       },
       {   
           "foto":"imagenes/jd/jd1/voe1.png",
@@ -24,7 +33,8 @@
           "nombres": "Cynthia Marlén",
           "appaterno":"Bolaños",
           "apmaterno":"Pumarejo",
-          "email":"gloria.delangel@ine.mx"
+          "email":"gloria.delangel@ine.mx",
+          "status":"p"
       },
       {   
           "foto":"imagenes/jd/jd1/vc1.png",
@@ -32,7 +42,8 @@
           "nombres": "Javier",
           "appaterno":"Meraz",
           "apmaterno":"Cueto",
-          "email":"javier.meraz@ine.mx"
+          "email":"javier.meraz@ine.mx",
+          "status":"p"
       },
       {   
           "foto":"imagenes/jd/jd1/vrfe1.png",
@@ -40,7 +51,8 @@
           "nombres": "Aldo",
           "appaterno":"Cuellar",
           "apmaterno":"Robelo",
-          "email":"aldo.cuellar@ine.mx"
+          "email":"aldo.cuellar@ine.mx",
+          "status":"e"
       },
       
       {   
@@ -49,7 +61,8 @@
           "nombres": "Rubén Bernardino",
           "appaterno":"Vera",
           "apmaterno":"Casanova",
-          "email":"ruben.vera@ine.mx"
+          "email":"ruben.vera@ine.mx",
+          "status":"p"
       },
       {
         "direccion":[
@@ -75,18 +88,18 @@
         }
       
        ]  
-     } ,
-     {
-        "junta":[{
-            "id":1,
-            "ubicacion":"Pánuco"
-        }
-
-        ]
-      }
+     }
+    
    ],
    "jd2":[
-      
+    {
+        "junta":[{
+            "id":2,
+            "ubicacion":"Tantoyuca"
+        }
+  
+        ]
+      },
       
     {   
         "foto":"imagenes/jd/jd1/ve1.png",
@@ -94,7 +107,8 @@
         "nombres": "Armando",
         "appaterno":"Cuacua",
         "apmaterno":"Lares",
-        "email":"Armando.cuacua@ine.mx"
+        "email":"Armando.cuacua@ine.mx",
+        "status":"p"
     },
     {   
         "foto":"imagenes/jd/jd1/vs1.png",
@@ -102,7 +116,8 @@
         "nombres": "Gloria Adriana",
         "appaterno":"del Ángel",
         "apmaterno":"del Ángel",
-        "email":"gloria.delangel@ine.mx"
+        "email":"gloria.delangel@ine.mx",
+        "status":"p"
     },
     {   
         "foto":"imagenes/jd/jd1/voe1.png",
@@ -110,7 +125,8 @@
         "nombres": "Cynthia Marlén",
         "appaterno":"Bolaños",
         "apmaterno":"Pumarejo",
-        "email":"gloria.delangel@ine.mx"
+        "email":"gloria.delangel@ine.mx",
+        "status":"p"
     },
     {   
         "foto":"imagenes/jd/jd1/vc1.png",
@@ -118,7 +134,8 @@
         "nombres": "Javier",
         "appaterno":"Meraz",
         "apmaterno":"Cueto",
-        "email":"javier.meraz@ine.mx"
+        "email":"javier.meraz@ine.mx",
+        "status":"p"
     },
     {   
         "foto":"imagenes/jd/jd1/vrfe1.png",
@@ -126,7 +143,8 @@
         "nombres": "Aldo",
         "appaterno":"Cuellar",
         "apmaterno":"Robelo",
-        "email":"aldo.cuellar@ine.mx"
+        "email":"aldo.cuellar@ine.mx",
+        "status":"p"
     },
     
     {   
@@ -135,7 +153,8 @@
         "nombres": "Rubén Bernardino",
         "appaterno":"Vera",
         "apmaterno":"Casanova",
-        "email":"ruben.vera@ine.mx"
+        "email":"ruben.vera@ine.mx",
+        "status":"p"
     },
     {
       "direccion":[
@@ -161,15 +180,8 @@
       }
     
      ]  
-   } ,
-   {
-      "junta":[{
-          "id":2,
-          "ubicacion":"Tantoyuca"
-      }
-
-      ]
-    }
+   } 
+   
  ]
 
 }

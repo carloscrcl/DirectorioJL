@@ -108,34 +108,44 @@ let peticion = fetch("directoriojl.json")
 let segudaPeticion = fetch("directoriojds.json")
     .then(res2 => res2.json())
     .then(res => {
-      for (let i = 1; i <= 20; i++) {
+
+      for (let i = 0; i < 2; i++) {
         
         
-        let obj = res["jd"+i];
-        console.log(obj);
-        let calle = document.createElement("p");
-        let col = document.createElement("p");
-        let referencia = document.createElement("p");
-        let cp = document.createElement("p");
-        let mpio = document.createElement("p");
-
-        let gridC = document.createElement("div");
-                let adscripcion = document.createElement("div");
-                let ads = obj[8]["junta"];
-                console.log(ads);
-                let p =  document.createElement("p");
-                p.textContent = ads.id +" " + ads.ubiciacion; 
-                
-                adscripcion.appendChild(p);
-
-                gridC.appendChild(adscripcion);
-                fragmento.appendChild(gridC);
-                contenedorJd.appendChild(fragmento);
-
-
+        let obj = res["jd"+(i+1)];
+        // console.log(obj);
+        
         for (const vocal in obj) {
-            
-            if(vocal == 6 ){
+
+            if(vocal == 0){
+              let gridC = document.createElement("div");
+              let adscripcion = document.createElement("div");
+              let id = obj[vocal]["junta"][0].id;
+              let ubic = obj[vocal]["junta"][0].ubicacion;
+              if(id < 10){
+                id = "0"+id;
+              }
+              let ads = id + " " + ubic;
+              // console.log(ads);
+              let p =  document.createElement("p");
+              p.textContent = ads; 
+              
+              adscripcion.appendChild(p);
+
+              gridC.appendChild(adscripcion);
+              fragmento.appendChild(gridC);
+              contenedorJd.appendChild(fragmento);
+
+              console.log(contenedorJd);
+            }
+            else        
+            if(vocal == 7 ){
+              let calle = document.createElement("p");
+              let col = document.createElement("p");
+              let referencia = document.createElement("p");
+              let cp = document.createElement("p");
+              let mpio = document.createElement("p");
+
               let gridCelda = document.createElement("div");
               let gridDireccion = document.createElement("div");
               let direccion = obj[vocal].direccion;
@@ -159,11 +169,12 @@ let segudaPeticion = fetch("directoriojds.json")
                 contenedorJd.appendChild(fragmento);
                 // console.log(contenedorJd);
                 // break;
-            }else if (vocal == 7) {
+            }else if (vocal == 8) {
                let telefonos = obj[vocal].telefonos[0];
                let gridCelda = document.createElement("div");
                let tels = document.createElement("div");
-               console.log( telefonos);
+              //  console.log( telefonos);
+               
                for (const tel in telefonos) {
                   let p = document.createElement("p");
                   let span = document.createElement("span");
@@ -178,15 +189,10 @@ let segudaPeticion = fetch("directoriojds.json")
               
               
             }
-            
-            
+                 
             else{
 
-                
-                
-                
-                                  
-
+      
                 let gridCelda = document.createElement("div");
                 let gridBody = document.createElement("div");
                 
@@ -219,11 +225,6 @@ let segudaPeticion = fetch("directoriojds.json")
                 gridBody.appendChild(gridImage);
                 gridBody.appendChild(gridTextos);
                 gridCelda.appendChild(gridBody);
-                
-                
-                
-                
-                
                 
                 fragmento.appendChild(gridCelda);
                 contenedorJd.appendChild(fragmento);
