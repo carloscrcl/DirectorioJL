@@ -99,16 +99,16 @@ let peticion = fetch("directoriojl.json")
         
         fragmento.appendChild(ficha);
         contenedor.appendChild(fragmento);
-    }
-    document.body.appendChild(contenedor);
-})
-
-// -------- DISTRITOS ---------------------
-
-let segudaPeticion = fetch("directoriojds.json")
+      }
+      document.body.appendChild(contenedor);
+    })
+    
+    // -------- DISTRITOS ---------------------
+    
+    let segudaPeticion = fetch("directoriojds.json")
     .then(res2 => res2.json())
     .then(res => {
-
+      
       for (let i = 0; i < 2; i++) {
         
         
@@ -116,73 +116,83 @@ let segudaPeticion = fetch("directoriojds.json")
         // console.log(obj);
         
         for (const vocal in obj) {
-
-            if(vocal == 0){
-              let gridC = document.createElement("div");
-              let adscripcion = document.createElement("div");
-              let id = obj[vocal]["junta"][0].id;
-              let ubic = obj[vocal]["junta"][0].ubicacion;
-              if(id < 10){
-                id = "0"+id;
-              }
-              let ads = id + " " + ubic;
-              // console.log(ads);
-              let p =  document.createElement("p");
-              p.textContent = ads; 
-              
-              adscripcion.appendChild(p);
-
-              gridC.appendChild(adscripcion);
-              fragmento.appendChild(gridC);
-              contenedorJd.appendChild(fragmento);
-
-              console.log(contenedorJd);
+          
+          // ---------CREACION CELDA ADSCRIPCION ---------------------
+          if(vocal == 0){
+            let gridC = document.createElement("div");
+            let adscripcion = document.createElement("div");
+            let id = obj[vocal]["junta"][0].id;
+            let ubic = obj[vocal]["junta"][0].ubicacion;
+            if(id < 10){
+              id = "0"+id;
             }
-            else        
-            if(vocal == 7 ){
-              let calle = document.createElement("p");
-              let col = document.createElement("p");
-              let referencia = document.createElement("p");
-              let cp = document.createElement("p");
-              let mpio = document.createElement("p");
-
-              let gridCelda = document.createElement("div");
-              let gridDireccion = document.createElement("div");
-              let direccion = obj[vocal].direccion;
-                
-                calle.textContent = direccion[0].calle +" Num. "+ direccion[0].numero;
-                col.textContent = direccion[0].colonia;
-                referencia.textContent = direccion[0].referencia;
-                cp.textContent = direccion[0].cp;
-                mpio.textContent = direccion[0].mpio;
+            let ads = id + " " + ubic;
+            // console.log(ads);
+            let p =  document.createElement("p");
+            p.textContent = ads; 
+            
+            adscripcion.appendChild(p);
+            gridC.classList.add("grid_celda");
+            gridC.classList.add("grid_dato");
+            gridC.appendChild(adscripcion);
+            fragmento.appendChild(gridC);
+            contenedorJd.appendChild(fragmento);
+            
+            console.log(contenedorJd);
+          }
+          // ---------CREACION CELDA DIRECCION ---------------------
+          else        
+          if(vocal == 7 ){
+            let calle = document.createElement("p");
+            let col = document.createElement("p");
+            let referencia = document.createElement("p");
+            let cp = document.createElement("p");
+            let mpio = document.createElement("p");
+            
+            let gridCelda = document.createElement("div");
+            let gridDireccion = document.createElement("div");
+            let direccion = obj[vocal].direccion;
+            
+            calle.textContent = direccion[0].calle +" Num. "+ direccion[0].numero;
+            col.textContent = direccion[0].colonia;
+            referencia.textContent = direccion[0].referencias;
+            console.log(referencia);
+              cp.textContent = direccion[0].cp;
+              mpio.textContent = direccion[0].mpio;
               
-                
-                gridDireccion.appendChild(calle);
-                gridDireccion.appendChild(col);
-                gridDireccion.appendChild(referencia);
-                gridDireccion.appendChild(cp);
-                gridDireccion.appendChild(mpio);
-
-                gridCelda.appendChild(gridDireccion);
-                // console.log(gridCelda);
-                fragmento.appendChild(gridCelda);
-                contenedorJd.appendChild(fragmento);
-                // console.log(contenedorJd);
-                // break;
+              
+              gridDireccion.appendChild(calle);
+              gridDireccion.appendChild(col);
+              gridDireccion.appendChild(referencia);
+              gridDireccion.appendChild(cp);
+              gridDireccion.appendChild(mpio);
+              
+              gridCelda.classList.add("grid_celda");
+              gridCelda.classList.add("grid_direccion");
+              gridCelda.appendChild(gridDireccion);
+              // console.log(gridCelda);
+              fragmento.appendChild(gridCelda);
+              contenedorJd.appendChild(fragmento);
+              // console.log(contenedorJd);
+              // break;
+           
+              // ---------CREACION CELDA TELEFONOS ---------------------
             }else if (vocal == 8) {
-               let telefonos = obj[vocal].telefonos[0];
-               let gridCelda = document.createElement("div");
-               let tels = document.createElement("div");
+              let telefonos = obj[vocal].telefonos[0];
+              let gridCelda = document.createElement("div");
+              let tels = document.createElement("div");
               //  console.log( telefonos);
-               
-               for (const tel in telefonos) {
-                  let p = document.createElement("p");
-                  let span = document.createElement("span");
+              
+              for (const tel in telefonos) {
+                let p = document.createElement("p");
+                let span = document.createElement("span");
+                  
                   span.textContent = telefonos[tel];
                   p.appendChild(span);
+                  tels.classList.add("grid_telefono");
                   tels.appendChild(p);
                 }
-                
+                gridCelda.classList.add("grid_celda");
                 gridCelda.appendChild(tels);
                 fragmento.appendChild(gridCelda);
                 contenedorJd.appendChild(fragmento);
@@ -201,6 +211,7 @@ let segudaPeticion = fetch("directoriojds.json")
                 
                 let gridTextos = document.createElement("div");
                 let nombre = document.createElement("p");
+                let estatus = document.createElement("p");
                 let appaterno = document.createElement("p");
                 let apmaterno = document.createElement("p");
                 let email = document.createElement("p");
@@ -209,6 +220,16 @@ let segudaPeticion = fetch("directoriojds.json")
                 let rutaImagen = obj[vocal].foto;
                 img.src = rutaImagen;
                 gridImage.appendChild(img);
+                let e = obj[vocal].status;
+                if(e != "e"){
+                  
+                  estatus.textContent = obj[vocal].status;
+                  estatus.style.display = "none";
+                }else{
+                  let texto = "Encargado";
+                  estatus.textContent = texto;
+                  estatus.classList.add("encargado");
+                }
                 
                 nombre.textContent = obj[vocal].nombres;
                 appaterno.textContent = obj[vocal].appaterno;
@@ -217,13 +238,18 @@ let segudaPeticion = fetch("directoriojds.json")
                 link.appendChild(email);
     
                             
+                gridTextos.appendChild(estatus);
                 gridTextos.appendChild(nombre);
                 gridTextos.appendChild(appaterno);
                 gridTextos.appendChild(apmaterno);
                 gridTextos.appendChild(link);
-                
+                gridBody.classList.add("grid_body");
+                gridImage.classList.add("grid_imagen");
+                gridImage.classList.add("img");
+                gridTextos.classList.add("grid_textos");
                 gridBody.appendChild(gridImage);
                 gridBody.appendChild(gridTextos);
+                gridCelda.classList.add("grid_celda");
                 gridCelda.appendChild(gridBody);
                 
                 fragmento.appendChild(gridCelda);
