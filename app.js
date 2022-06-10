@@ -145,7 +145,8 @@ let segudaPeticion = fetch("directoriojds.json")
                 // console.log(contenedorJd);
                 
 
-            }else if (vocal == 8) {
+            }
+            if (vocal == 8) {
                let telefonos = obj[vocal].telefonos;
                let gridCelda = document.createElement("div");
                let tels = document.createElement("div");
@@ -164,29 +165,30 @@ let segudaPeticion = fetch("directoriojds.json")
               
               
             }
-            
-            
-            else{
-              
-              if(vocal == 0){
+            if(vocal == 0){
                                 
-                let id = obj[vocal]["junta"].id;
-                let ubic = obj[vocal]["junta"].ubicacion;
-                
-                if(id < 10){
-                  id = "0"+id;
-                }
-                console.log(id +" "+ ubic);
-                let gridCelda = document.createElement("div");
-                let gridBodyAds = document.createElement("div");
-                let p = document.createElement("p");
-                p. textContent = id +" "+ubic;
-                
-                gridBodyAds.appendChild(p);
-                gridCelda.appendChild(gridBodyAds);
-                fragmento.appendChild(gridCelda);
-                contenedorJd.appendChild(fragmento);
+              let id = obj[vocal]["junta"].id;
+              let ubic = obj[vocal]["junta"].ubicacion;
+              
+              if(id < 10){
+                id = "0"+id;
               }
+              console.log(id +" "+ ubic);
+              let gridCelda = document.createElement("div");
+              let gridBodyAds = document.createElement("div");
+              let p = document.createElement("p");
+              p. textContent = id +" "+ubic;
+              
+              gridBodyAds.appendChild(p);
+              gridCelda.appendChild(gridBodyAds);
+              fragmento.appendChild(gridCelda);
+              contenedorJd.appendChild(fragmento);
+            }
+            
+            
+            
+              
+              
               
               
 
@@ -226,7 +228,7 @@ let segudaPeticion = fetch("directoriojds.json")
                 fragmento.appendChild(gridCelda);
                 contenedorJd.appendChild(fragmento);
                 
-            }
+            
         }  
       }
         document.body.appendChild(contenedorJd);
