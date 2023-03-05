@@ -1,0 +1,1634 @@
+,
+ "jd2":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":2,
+          "ubicacion":"Tantoyuca"
+      }
+
+      ]
+    }
+ ],
+ "jd3":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Tuxpán, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":3,
+          "ubicacion":"Tuxpán"
+      }
+
+      ]
+    }
+ ],
+ "jd4":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":4,
+          "ubicacion":"Veracruz"
+      }
+
+      ]
+    }
+ ],
+ "jd5":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":5,
+          "ubicacion":"Poza Rica"
+      }
+
+      ]
+    }
+ ],
+ "jd6":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":6,
+          "ubicacion":"Papantla"
+      }
+
+      ]
+    }
+ ],
+ "jd7":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":7,
+          "ubicacion":"Martinez de la Torre"
+      }
+
+      ]
+    }
+ ],
+ "jd8":[
+          
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":8,
+          "ubicacion":"Xalapa"
+      }
+
+      ]
+    }
+ ],
+ "jd9":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":9,
+          "ubicacion":"Coatepec"
+      }
+
+      ]
+    }
+ ],
+ "jd10":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":10,
+          "ubicacion":"Xalapa"
+      }
+
+      ]
+    }
+ ],
+ "jd11":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":11,
+          "ubicacion":"Coatzacoalcos"
+      }
+
+      ]
+    }
+ ],
+ "jd12":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":12,
+          "ubicacion":"Veracruz"
+      }
+
+      ]
+    }
+ ],
+ "jd13":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":13,
+          "ubicacion":"Huatusco"
+      }
+
+      ]
+    }
+ ],
+ "jd14":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":14,
+          "ubicacion":"Minatitlan"
+      }
+
+      ]
+    }
+ ],
+ "jd15":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":15,
+          "ubicacion":"Orizaba"
+      }
+
+      ]
+    }
+ ],
+ "jd16":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":16,
+          "ubicacion":"Cordoba"
+      }
+
+      ]
+    }
+ ],
+ "jd17":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":17,
+          "ubicacion":"Cosamaloapan"
+      }
+
+      ]
+    }
+ ],
+ "jd18":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":18,
+          "ubicacion":"Zongolica"
+      }
+
+      ]
+    }
+ ],
+ "jd19":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":19,
+          "ubicacion":"San Andrés"
+      }
+
+      ]
+    }
+ ],
+ "jd20":[
+      
+      
+    {   
+        "foto":"imagenes/jd/jd1/ve1.png",
+        "cargo":"ve",
+        "nombres": "Armando",
+        "appaterno":"Cuacua",
+        "apmaterno":"Lares",
+        "email":"Armando.cuacua@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vs1.png",
+        "cargo":"vs",
+        "nombres": "Gloria Adriana",
+        "appaterno":"del Ángel",
+        "apmaterno":"del Ángel",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/voe1.png",
+        "cargo":"voe",
+        "nombres": "Cynthia Marlén",
+        "appaterno":"Bolaños",
+        "apmaterno":"Pumarejo",
+        "email":"gloria.delangel@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vc1.png",
+        "cargo":"vcyec",
+        "nombres": "Javier",
+        "appaterno":"Meraz",
+        "apmaterno":"Cueto",
+        "email":"javier.meraz@ine.mx"
+    },
+    {   
+        "foto":"imagenes/jd/jd1/vrfe1.png",
+        "cargo":"vrfe",
+        "nombres": "Aldo",
+        "appaterno":"Cuellar",
+        "apmaterno":"Robelo",
+        "email":"aldo.cuellar@ine.mx"
+    },
+    
+    {   
+        "foto":"imagenes/jd/jd1/josa1.png",
+        "cargo":"vrfe",
+        "nombres": "Rubén Bernardino",
+        "appaterno":"Vera",
+        "apmaterno":"Casanova",
+        "email":"ruben.vera@ine.mx"
+    },
+    {
+      "direccion":[
+      {
+       "calle":"Melchor Ocampo",
+       "numero":"102",
+       "colonia":"Centro",
+       "referencias":"entre Landero y Coss y Benito Juárez",
+       "cp":"93990",
+       "mpio":"Pánuco, Ver." 
+      }
+    
+     ]  
+   },  
+    {
+      "telefonos":[
+      {
+       "tel1":"846 266-18-28",
+       "tel2":"846 266-31-28",
+       "tel3":"846 266-18-81",
+       "tel4":"846 266-28-35"
+       
+      }
+    
+     ]  
+   } ,
+   {
+      "junta":[{
+          "id":20,
+          "ubicacion":"Cosoleacaque"
+      }
+
+      ]
+    }
+ ]
