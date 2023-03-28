@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+
+}
+
+.contenedor {
+  width: 1200px;
+  margin: auto;
+
+}
+
+a {
+  color: green;
+}
+
+/* article.card {
+  width: 330px;
+} */
+
+article.card {
+  height: 110px;
+  width: 180px;
+  display: inline-block;
+  margin: 2px;
+  position: relative;
+  text-align: left;
+  vertical-align: top;
+  white-space: normal;
+  overflow: hidden;
+  background: none repeat scroll 0 0 #fff;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  text-decoration: none;
+}
+
+/* article.card .card-click-target {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+} */
+
+/* img {
+  height: auto;
+  max-width: 100%;
+} */
+
+article.card img.cover {
+  height: 100%;
+  width: 80px;
+  border-right: 4px solid #d60887;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+article.card .details {
+  margin-left: 90px;
+  height: 155px;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  padding: 7px 10px 0;
+  position: relative;
+}
+
+article.card .details .title {
+  font-size: .45em;
+  line-height: 24px;
+  max-height: 48px;
+  min-height: 18px;
+  color: #333;
+  display: block;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.article.card .details .titulo {
+  color: #fff;
+  background: #d60887;
+  width: 110px;
+  height: 45px;
+  bottom: 0;
+}
+
+article.card .details .subdetail,
+article.card .details .subdetail a {
+  color: #aaa;
+  width: 100%;
+  font-size: .45em;
+  line-height: .8em;
+  margin: 1px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.details .subdetail a {
+  color: #aaa;
+  width: 100%;
+  font-size: .6em;
+  line-height: .8em;
+  margin: 1px 0;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+article.card .details .description {
+  display: block;
+  max-height: 71px;
+  min-height: 20px;
+  color: #8d8d8d;
+  font-size: .6em;
+  margin-top: 12px;
+  position: relative;
+  text-align: left;
+  white-space: normal;
+  line-height: 18px;
+  overflow: hidden;
+}
+
+/* article.card .details .description p span {
+  font-size: .45em;
+  
+} */
+article.card .details .description .embellecer {
+  color: #d60887;
+}
+
+article.card .details .description .titulo-resaltar {
+  height: 18px;
+  width: 90px;
+}
+
+/* article.card .details .paragraph-end {
+  height: 24px;
+  width: 45px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)) repeat scroll 0 0 rgba(0, 0, 0, 0);
+  bottom: 0;
+  max-height: 100%;
+  position: absolute;
+  right: 0;
+} */
