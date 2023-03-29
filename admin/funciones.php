@@ -34,7 +34,7 @@ function obtenerVocales($con)
         "nombre" => $registro['nombres'],
         "paterno" => $registro['ap. paterno'],
         "materno" => $registro['ap. materno'],
-        "email" => $registro['email'] . "@ine.mx",
+        "email" => $registro['email'] ,
         "foto" => $registro['foto'],
         "rama_id" => $registro['rama_id'],
         "tipo_id" => $registro['tipo_id'],
@@ -49,6 +49,34 @@ function obtenerVocales($con)
   return ($data) ? $data : "no tengo datos";
 
 }
+
+function obtenerTarjeta($con, $d){
+  $consulta = "SELECT *
+              FROM vocales
+              WHERE id = ".$id;
+  $query = $con->prepare($consulta);
+  $query->execute();
+  ;
+  if($query->rowCount()>0){
+    $data = [];
+    while ($registro = $query->fetch(PDO::FETCH_ASSOC)) {
+      $vocal = [
+        "id" => $registro['id'],
+        "nombre" => $registro['nombres'],
+        "paterno" => $registro['ap. paterno'],
+        "materno" => $registro['ap. materno'],
+        "email" => $registro['email'] ,
+        "foto" => $registro['foto'],
+        
+        "ip" => $registro['ipphone_id']
+      ];
+      array_push($data, $vocal);
+    }
+  }
+  return ($data) ? $data : "no tengo datos";
+}
+
+
 
 
 
