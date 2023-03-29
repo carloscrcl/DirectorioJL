@@ -18,7 +18,7 @@
 
     <link rel="stylesheet" type="" href="../css/estilos_tarjetas.css">
 
-    <title>Directorio Junta Local</title>
+    <title>Junta Local</title>
 </head>
 
 <body>

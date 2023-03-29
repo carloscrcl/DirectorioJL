@@ -2,7 +2,6 @@
 
 require('config.php');
 require('funciones.php');
-
 $conexion = conexion($bd_config);
 // echo "<pre></pre>";
 // var_dump($conexion);
@@ -13,9 +12,10 @@ if (!$conexion) {
 }
 // echo "<h1 style='color: green;'>Conectado</h1>";
 
-$datos = obtenerTarjeta($conexion);
+$id = "1";
+$datos = obtenerTarjeta($conexion, $id);
 // echo "<pre></pre>";
-// var_dump($datos);
+var_dump($datos);
 // echo "<pre></pre>";
 
 
