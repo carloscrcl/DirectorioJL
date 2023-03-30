@@ -3,6 +3,7 @@
 // echo "<pre>";
 // var_dump($datos);
 // echo "</pre>";
+
 // ?>
 <html lang="es">
 
@@ -16,7 +17,7 @@
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" type="" href="../css/estilos_tarjetas.css">
+    <link rel="stylesheet" type="" href="../../css/estilos_tarjetas.css">
 
     <title>Junta Local</title>
 </head>
@@ -39,7 +40,6 @@
         <main>
             <!-- <div class="cuerpo"> -->
             <div class="encabezado">
-
                 <article id="" class="card thCard">
                     <p>Vocal Ejecutivo</p>
                 </article>
@@ -60,33 +60,36 @@
                 </article>
             </div>
 
-            <?php foreach ($datos as $vocal) {
-                        if ((int) ($vocal['distrito_id']) > 0 && (int) ($vocal['distrito_id']) < 21) {
-                ?>
-            <article id="<?php echo $vocal["id"];?>" class="card">
+            <?php foreach ($data as $vocal) {
+                if ((int) ($vocal['distrito_id']) > 0 && (int) ($vocal['distrito_id']) < 21) {
+                    ?>
+            <a href="<?php echo '../../admin/editarImagen.php?foto='.$vocal['foto'].'&id='.$vocal['id']; ?>">
 
-                <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $data['cargo']; ?>"
-                    title="Patético jinete del rock and roll">
+                <article id="<?php echo $vocal["id"];?>" class="card">
 
-                <div class="details">
+                    <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $data['cargo']; ?>"
+                        title="Patético jinete del rock and roll">
 
-                    <div class="description">
-                        <p>
-                            <?php echo $vocal['nombre']; ?>
-                        </p>
-                        <p>
-                            <?php echo $vocal['paterno']; ?>
-                        </p>
-                        <p>
-                            <?php echo $vocal['materno']; ?>
-                        </p>
-                        <p><span class="embellecer">
-                                <?php echo $vocal['email']; ?>
-                            </span></p>
+                    <div class="details">
 
+                        <div class="description">
+                            <p>
+                                <?php echo $vocal['nombre']; ?>
+                            </p>
+                            <p>
+                                <?php echo $vocal['paterno']; ?>
+                            </p>
+                            <p>
+                                <?php echo $vocal['materno']; ?>
+                            </p>
+                            <p><span class="embellecer">
+                                    <?php echo $vocal['email']; ?>
+                                </span></p>
+
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </a>
             <?php
                        }
                 }

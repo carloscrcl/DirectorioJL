@@ -1,7 +1,7 @@
 <?php
-
 require('config.php');
 require('funciones.php');
+
 $conexion = conexion($bd_config);
 // echo "<pre></pre>";
 // var_dump($conexion);
@@ -12,14 +12,19 @@ if (!$conexion) {
 }
 // echo "<h1 style='color: green;'>Conectado</h1>";
 
-$id = 10;
-$datos = obtenerTarjeta($conexion, $id);
+$data = obtenerVocales($conexion);
 // echo "<pre></pre>";
-var_dump($datos);
+// var_dump($data);
 // echo "<pre></pre>";
 
+$dir = opendir('../views/admin/');
+while(false!=($archivo = readdir($dir))){
+  // echo $archivo."<br>";
+  if(is_file($archivo)){
+    echo $archivo. "---> Archivo ";
+  }
+}
 
-// require("../views/listarVocales.view.php")
+require("../views/admin/listarVocales.admin.view.php");
 
-
-?>
+  ?>
