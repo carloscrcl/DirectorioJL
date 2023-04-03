@@ -73,7 +73,7 @@ function obtenerTarjeta($con, $id)
 
   $data = [];
   if (!$query) {
-    echo "No se esta ejecutando la consulta<br> ";
+    echo "Funciones: No se esta ejecutando la consulta<br> ";
   } else {
 
     $query = $con->prepare($consulta);
