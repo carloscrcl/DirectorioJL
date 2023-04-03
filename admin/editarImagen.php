@@ -1,25 +1,25 @@
 <?php
-
-require('config.php');
 require('funciones.php');
+require('config.php');
+
+// echo "<pre>";
+// var_dump($_GET);
+// echo "</pre>";
+
+$foto = $_GET['foto'];
+$id = $_GET['id'];
+
 $conexion = conexion($bd_config);
-// echo "<pre></pre>";
-// var_dump($conexion);
-// echo "<pre></pre>";
 
 if (!$conexion) {
   echo "<h1 style='color: red;'>Error al conectar</h1>";
 }
 // echo "<h1 style='color: green;'>Conectado</h1>";
 
-$id = 10;
 $datos = obtenerTarjeta($conexion, $id);
-// echo "<pre></pre>";
-var_dump($datos);
-// echo "<pre></pre>";
 
 
-// require("../views/listarVocales.view.php")
+require("../views/editarImagen.view.php")
 
 
-?>
+  ?>

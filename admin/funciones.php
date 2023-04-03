@@ -34,7 +34,7 @@ function obtenerVocales($con)
         "nombre" => $registro['nombres'],
         "paterno" => $registro['ap. paterno'],
         "materno" => $registro['ap. materno'],
-        "email" => $registro['email'] ,
+        "email" => $registro['email'],
         "foto" => $registro['foto'],
         "rama_id" => $registro['rama_id'],
         "tipo_id" => $registro['tipo_id'],
@@ -50,37 +50,62 @@ function obtenerVocales($con)
 
 }
 
-function obtenerTarjeta($con, $id){
-  $consulta = "SELECT v.nombres, v.`ap. paterno`, v.`ap. materno`,v.foto, 
-  r.descripcion, t.descripcion, 
-  c.nombre, 
-  d.texto_id, d.nombre, 
-  vc.ext, vc.descripcion
-  FROM vocales v, ramas r, tipos t, cargos c, vocalias_distritos vd, distritos d, vocalias vc
-  WHERE v.id = ". $id .
-      "AND v.rama_id = r.rama_id
-       AND t.id = v.tipo_id
-       AND c.cargo_id = v.cargo_id
-       AND v.distrito_id = vd.distrito_id
-       AND vd.distrito_id = d.distrito_id
-       AND v.vocalia_id = vd.vocalia_id
-       AND vd.vocalia_id = vc.vocalia_id;";
+function obtenerTarjeta($con, $id)
+{
+  $consulta = "SELECT vocales.nombres, vocales.`ap. paterno`, vocales.`ap. materno`,vocales.foto, vocales.email,
+  ramas.descripcion as `rama`, tipos.descripcion as `tipo`, 
+  cargos.nombre as `cargo`, 
+  distritos.texto_id as `Num`, distritos.nombre as `Distrito`, 
+  vocalias.ext as `ext`, vocalias.descripcion as `Vocalia` 
+  
+  FROM vocales, ramas, tipos, cargos, vocalias_distritos, distritos, vocalias   
+  WHERE vocales.id = $id AND
+	    vocales.rama_id = ramas.rama_id
+       AND tipos.id = vocales.tipo_id
+       AND cargos.cargo_id = vocales.cargo_id
+       AND vocales.distrito_id = vocalias_distritos.distrito_id
+       AND vocalias_distritos.distrito_id = distritos.distrito_id
+       AND vocales.vocalia_id = vocalias_distritos.vocalia_id
+       AND vocalias_distritos.vocalia_id = vocalias.vocalia_id";
+
   $query = $con->query($consulta);
+
+
   $data = [];
-  if(!$query){
+  if (!$query) {
     echo "No se esta ejecutando la consulta<br> ";
-  }else{
+  } else {
 
     $query = $con->prepare($consulta);
     $query->execute();
-    
+
+
     // if($query->rowCount()>0){
     $registro = $query->fetch(PDO::FETCH_ASSOC);
-      var_dump($registro);
-      array_push($data, $registro);
-      
-    }
-    return ($data) ? $data : "no tengo datos";
+    // echo "<pre>";
+    // var_dump($registro);
+    // echo "</pre>";
+    $vocal = [
+      "nombre" => $registro['nombres'],
+      "paterno" => $registro['ap. paterno'],
+      "materno" => $registro['ap. materno'],
+      "foto" => $registro['foto'],
+      "email" => $registro['email'],
+      "rama" => $registro['rama'],
+      "tipo" => $registro['tipo'],
+      "cargo" => $registro['cargo'],
+      "numeroDist" => $registro['Num'],
+      "distrito" => $registro['Distrito'],
+      "extension" => $registro['ext'],
+      "vocalia" => $registro['Vocalia'],
+      "ip" => "30" . $registro['Num'] . $registro['ext']
+    ];
+
+
+    array_push($data, $vocal);
+
+  }
+  return ($data) ? $data : "no tengo datos";
   // }
 }
 

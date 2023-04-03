@@ -36,7 +36,7 @@ include("../views/fijos/head.php");
                         <article id="<?php echo $vocal["id"]; ?>" class="card">
 
                             <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $data['cargo']; ?>"
-                                title="Patético jinete del rock and roll">
+                                title="<?php echo $vocal['nombre'] . " " . $vocal['paterno']; ?>">
 
                             <div class="details">
 

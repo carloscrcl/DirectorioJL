@@ -129,7 +129,8 @@ article.card {
   border-radius: 3px;
   /* border: ridge; */
   text-decoration: none;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+  box-shadow: 5px 5px 13px 1px rgba(0, 0, 0, 0.54);
+  ;
 }
 
 article.card img.cover {
@@ -219,7 +220,7 @@ article.card .details .description .titulo-resaltar {
 
 
 footer.contenedor {
-  height: 100px;
+  height: 150px;
   width: 100%;
   background: #d60887;
 }
