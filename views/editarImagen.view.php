@@ -68,7 +68,7 @@ include("fijos/head.php");
         </div>
         <div class="pie-tarjeta">
 
-            <button class="enviar" type="submit" id="cambiar">Enviar</button>
+            <button class="enviar" type="submit" id="enviar">Enviar</button>
             <button class="cancelar " type="button">Cancelar</button>
 
         </div>
