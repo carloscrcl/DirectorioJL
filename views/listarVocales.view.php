@@ -4,7 +4,51 @@ include '../views/fijos/head.php';
 
 <div class="contenedor">
     <main>
-        <!-- <div class="cuerpo"> -->
+        <div class="cuerpo-principal">
+
+
+            <?php foreach ($datosJl as $miembro) {
+                if ((int) ($miembro['distrito_id']) === 21) { ?>
+                    <div class="encabezado">
+                        <article id="" class="card thCard-jl">
+                            <p>
+                                <?php echo $miembro['cargo']; ?>
+                            </p>
+                        </article>
+                    </div>
+                    <article id="<?php echo $miembro['id']; ?>" class="card">
+
+                        <img class="cover" src="<?php echo '../img/' . $miembro['foto']; ?>"
+                            alt="<?php echo $miembro['cargo']; ?>" title="">
+
+                        <div class="details">
+
+                            <div class="description">
+                                <p>
+                                    <?php echo $miembro['nombre']; ?>
+                                </p>
+                                <p>
+                                    <?php echo $miembro['paterno']; ?>
+                                </p>
+                                <p>
+                                    <?php echo $miembro['materno']; ?>
+                                </p>
+                                <p><span class="embellecer">
+                                        <?php echo $miembro['email']; ?>
+                                    </span></p>
+
+                            </div>
+                        </div>
+                    </article>
+                    <?php
+                }
+            }
+            ?>
+
+
+
+
+        </div>
         <div class="encabezado">
 
             <article id="" class="card thCard">
@@ -27,17 +71,14 @@ include '../views/fijos/head.php';
             </article>
         </div>
         <div class="cuerpo">
-            <?php
 
-
-            ?>
             <?php foreach ($datos as $vocal) {
                 if ((int) ($vocal['distrito_id']) > 0 && (int) ($vocal['distrito_id']) < 21) {
                     ?>
                     <article id="<?php echo $vocal["id"]; ?>" class="card">
 
-                        <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $data['cargo']; ?>"
-                            title="Patético jinete del rock and roll">
+                        <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $vocal['cargo_id']; ?>"
+                            title="">
 
                         <div class="details">
 

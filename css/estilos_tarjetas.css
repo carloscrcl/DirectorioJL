@@ -16,7 +16,7 @@ html {
 }
 
 .c-header {
-  wit: 95%;
+  width: 95%;
   display: flex;
   height: 200px;
   justify-content: space-between;
@@ -103,6 +103,12 @@ main {
   margin: auto;
   width: 95%;
   position: static;
+}
+
+.cuerpo-principal {
+  margin: auto;
+  width: 85%;
+  /* outline: 2px solid green; */
 }
 
 .cuerpo {

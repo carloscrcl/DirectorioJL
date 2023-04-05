@@ -20,7 +20,7 @@ include("fijos/head.php");
 
         <!-- <div class="cuerpo-tarjeta"> -->
 
-        <form action="#" class="cuerpo-tarjeta form" method="post" enctype="multipart/form-data">
+        <form action="" class="cuerpo-tarjeta form" method="post" enctype="multipart/form-data">
             <div class="contenedor-imagen">
                 <img src="../img/<?php echo $foto; ?>" alt="" id="imgPrev">
             </div>

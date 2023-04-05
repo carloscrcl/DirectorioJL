@@ -13,9 +13,12 @@ if (!$conexion) {
 // echo "<h1 style='color: green;'>Conectado</h1>";
 
 $datos = obtenerVocales($conexion);
-// echo "<pre></pre>";
-// var_dump($datos);
-// echo "<pre></pre>";
+
+$datosJl = obtenerJunta($conexion, 21);
+
+echo "<pre>";
+var_dump($datosJl);
+echo "</pre>";
 
 
 require("../views/listarVocales.view.php")

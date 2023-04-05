@@ -108,6 +108,69 @@ function obtenerTarjeta($con, $id)
   return ($data) ? $data : "no tengo datos";
   // }
 }
+function obtenerJunta($con, $id)
+{
+  $consulta = "SELECT vocales.id, vocales.nombres, vocales.`ap. paterno`, vocales.`ap. materno`,vocales.foto, vocales.email,
+  ramas.descripcion as `rama`, tipos.descripcion as `tipo`, 
+  cargos.nombre as `cargo`, 
+  distritos.texto_id as `Num`, distritos.nombre as `Distrito`, distritos.distrito_id as dist,
+  vocalias.ext as `ext`, vocalias.descripcion as `Vocalia` 
+  
+  FROM vocales, ramas, tipos, cargos, vocalias_distritos, distritos, vocalias   
+  WHERE distritos.distrito_id = $id AND
+	    vocales.rama_id = ramas.rama_id
+       AND tipos.id = vocales.tipo_id
+       AND cargos.cargo_id = vocales.cargo_id
+       AND vocales.distrito_id = vocalias_distritos.distrito_id
+       AND vocalias_distritos.distrito_id = distritos.distrito_id
+       AND vocales.vocalia_id = vocalias_distritos.vocalia_id
+       AND vocalias_distritos.vocalia_id = vocalias.vocalia_id
+  ORDER BY vocales.id asc ";
+
+  $query = $con->query($consulta);
+
+
+  $data = [];
+  if (!$query) {
+    echo "Funciones: No se esta ejecutando la consulta<br> ";
+  } else {
+
+    $query = $con->prepare($consulta);
+    $query->execute();
+
+
+    // if($query->rowCount()>0){
+    while ($registro = $query->fetch(PDO::FETCH_ASSOC)) {
+
+      // echo "<pre>";
+      // var_dump($registro);
+      // echo "</pre>";
+      $vocal = [
+        "id" => $registro['id'],
+        "distrito_id" => $registro['dist'],
+        "nombre" => $registro['nombres'],
+        "paterno" => $registro['ap. paterno'],
+        "materno" => $registro['ap. materno'],
+        "foto" => $registro['foto'],
+        "email" => $registro['email'],
+        "rama" => $registro['rama'],
+        "tipo" => $registro['tipo'],
+        "cargo" => $registro['cargo'],
+        "numeroDist" => $registro['Num'],
+        "distrito" => $registro['Distrito'],
+        "extension" => $registro['ext'],
+        "vocalia" => $registro['Vocalia'],
+        "ip" => "30" . $registro['Num'] . $registro['ext']
+
+      ];
+      array_push($data, $vocal);
+    }
+
+
+  }
+  return ($data) ? $data : "no tengo datos";
+  // }
+}
 
 
 

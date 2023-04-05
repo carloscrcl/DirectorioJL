@@ -5,6 +5,7 @@ const nombre = "Carlos Rodolfo",
   tipo = "2",
   rama = "3",
   foto = "file",
+  objeto = "",
   botonEnviar = d.getElementById("enviar");
 
 let json = {
@@ -45,28 +46,25 @@ const enviarData = () => {
     error: (error) => {
       console.error(error);
     },
-    data: json,
+    data: JSON.stringify(json),
   });
 };
 
 d.addEventListener("DOMContentLoaded", (e) => {
-  e.preventDefault();
+  // e.preventDefault();
   botonEnviar.addEventListener("click", enviarData());
   d.getElementById("imgLoaded").addEventListener("change", (e) => {
     imgPreview(e, "#imgPrev");
+    console.log(objeto);
   });
 });
 
 function imgPreview(evento, idimg) {
   const input = evento.target;
 
-  // console.log("Evento", evento);
 
   let $imgPreview = document.querySelector(idimg);
 
-  // console.log("previsualizador", $imgPreview);
-
-  // si no encuentra una imagen, sale de la función
   if (!input.files.length) return;
 
   file = input.files[0];
@@ -81,6 +79,6 @@ function imgPreview(evento, idimg) {
   console.log(file);
 
   objectURL = URL.createObjectURL(file);
-
+  console.log("ObjetoURL",objectURL);
   $imgPreview.src = objectURL;
 }
