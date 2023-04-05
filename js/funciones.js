@@ -52,7 +52,7 @@ const enviarData = () => {
 d.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
   botonEnviar.addEventListener("click", enviarData());
-  d.getElementById("loaded").addEventListener("change", (e) => {
+  d.getElementById("imgLoaded").addEventListener("change", (e) => {
     imgPreview(e, "#imgPrev");
   });
 });
@@ -73,7 +73,7 @@ function imgPreview(evento, idimg) {
   fileExt = file.type;
   // console.log("tipo", file.type);
   match = ["image/jpeg", "image/png"];
-  if (!fileType === match[0] || !fileType === match[1]) {
+  if (!fileExt === match[0] || !fileExt === match[1]) {
     alert("los archivos validos son: jpg, png");
     file.name = "";
     return false;

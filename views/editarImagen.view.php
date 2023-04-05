@@ -63,8 +63,7 @@ include("fijos/head.php");
         </form>
         <!-- </div> -->
         <div class="form-seleccion-img">
-            <input type="file" accept="image/*" onchange="imgPreview(event, '#imgPrev')" name="" id="imgLoaded"
-                value="Selecciona foto">
+            <input type="file" accept="image/*" name="" id="imgLoaded" value="Selecciona foto">
         </div>
         <div class="pie-tarjeta">
 
