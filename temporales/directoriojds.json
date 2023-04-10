@@ -1,0 +1,88 @@
+{
+ "jd1": [
+      
+      
+      {   
+          "foto":"imagenes/jd/jd1/ve1.png",
+          "cargo":"ve",
+          "nombres": "Armando",
+          "appaterno":"Cuacua",
+          "apmaterno":"Lares",
+          "email":"Armando.cuacua@ine.mx"
+      },
+      {   
+          "foto":"imagenes/jd/jd1/vs1.png",
+          "cargo":"vs",
+          "nombres": "Gloria Adriana",
+          "appaterno":"del Ángel",
+          "apmaterno":"del Ángel",
+          "email":"gloria.delangel@ine.mx"
+      },
+      {   
+          "foto":"imagenes/jd/jd1/voe1.png",
+          "cargo":"voe",
+          "nombres": "Cynthia Marlén",
+          "appaterno":"Bolaños",
+          "apmaterno":"Pumarejo",
+          "email":"gloria.delangel@ine.mx"
+      },
+      {   
+          "foto":"imagenes/jd/jd1/vc1.png",
+          "cargo":"vcyec",
+          "nombres": "Javier",
+          "appaterno":"Meraz",
+          "apmaterno":"Cueto",
+          "email":"javier.meraz@ine.mx"
+      },
+      {   
+          "foto":"imagenes/jd/jd1/vrfe1.png",
+          "cargo":"vrfe",
+          "nombres": "Aldo",
+          "appaterno":"Cuellar",
+          "apmaterno":"Robelo",
+          "email":"aldo.cuellar@ine.mx"
+      },
+      
+      {   
+          "foto":"imagenes/jd/jd1/josa1.png",
+          "cargo":"vrfe",
+          "nombres": "Rubén Bernardino",
+          "appaterno":"Vera",
+          "apmaterno":"Casanova",
+          "email":"ruben.vera@ine.mx"
+      },
+      {
+        "direccion":[
+        {
+         "calle":"Melchor Ocampo",
+         "numero":"102",
+         "colonia":"Centro",
+         "referencias":"entre Landero y Coss y Benito Juárez",
+         "cp":"93990",
+         "mpio":"Pánuco, Ver." 
+        }
+      
+       ]  
+     },  
+      {
+        "telefonos":[
+        {
+         "tel1":"846 266-18-28",
+         "tel2":"846 266-31-28",
+         "tel3":"846 266-18-81",
+         "tel4":"846 266-28-35"
+         
+        }
+      
+       ]  
+     } ,
+     {
+        "junta":[{
+            "id":1,
+            "ubicacion":"Pánuco"
+        }
+
+        ]
+      }
+ ]
+}
