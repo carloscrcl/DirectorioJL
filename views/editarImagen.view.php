@@ -1,8 +1,11 @@
 <?php
 include("fijos/head.php");
-// echo "<pre>";
-// var_dump($datos[0]);
-// echo "</pre>";
+echo "<pre>";
+var_dump($datos[0]);
+echo "</pre>";
+
+$tipo = $datos[0]['tipo_id'];
+$rama = $datos[0]['rama_id'];
 
 ?>
 <div class="contenedor">
@@ -49,19 +52,45 @@ include("fijos/head.php");
                         <div class="form-radios_tipos">
 
                             <label for="titular">
-                                <input type="radio" name="tipo" id="titular" value="1" checked> Titular</label>
+                                <input type="radio" name="tipo" id="titular" value=<?php if ($tipo == "1") {
+                                    echo "1";
+                                    echo " checked";
+                                } else {
+                                    echo "1";
+                                } ?>>
+                                Titular</label>
                             <label for="encargado">
-                                <input type="radio" name="tipo" id="encargado" value="2"> Encargado</label><br>
+                                <input type="radio" name="tipo" id="titular" value=<?php if ($tipo == "2") {
+                                    echo "2";
+                                    echo " checked";
+                                } else {
+                                    echo "2";
+                                } ?>> Encargado</label><br>
                         </div>
                         <div class="form-radio_rama">
 
                             <h3>Rama: </h3>
                             <label for="">
-                                <input type="radio" name="rama" id="spen" value="1" checked> SPEN</label>
+                                <input type="radio" name="rama" id="titular" value=<?php if ($rama == "1") {
+                                    echo "1";
+                                    echo " checked";
+                                } else {
+                                    echo "1";
+                                } ?>> SPEN</label>
                             <label for="encargado">
-                                <input type="radio" name="rama" id="pp" value="2"> Administrativo</label>
+                                <input type="radio" name="rama" id="titular" value=<?php if ($rama == "2") {
+                                    echo "2";
+                                    echo " checked";
+                                } else {
+                                    echo "2";
+                                } ?>> Administrativo</label>
                             <label for="encargado">
-                                <input type="radio" name="rama" id="hp" value="3"> Hp</label><br>
+                                <input type="radio" name="rama" id="titular" value=<?php if ($rama == "3") {
+                                    echo "3";
+                                    echo " checked";
+                                } else {
+                                    echo "3";
+                                } ?>> Hp</label><br>
                         </div>
                     </div>
                 </div><!-- Datos de la foto -->
@@ -70,8 +99,8 @@ include("fijos/head.php");
 
             <div class="form-seleccion-img">
                 <input type="file" accept="image/*" name="archivo" id="imgLoaded" value="Selecciona foto">
-                <input type="hidden" name="id" id="id" value="<?php echo $id;?>">
-                <input type="hidden" name="ubicacion" id="ubicacion" value="<?php echo $datos[0]['foto'];?>">
+                <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
+                <input type="hidden" name="ubicacion" id="ubicacion" value="<?php echo $datos[0]['foto']; ?>">
 
             </div>
 

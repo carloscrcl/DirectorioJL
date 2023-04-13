@@ -52,7 +52,7 @@ function obtenerVocales($con)
 
 function obtenerTarjeta($con, $id)
 {
-  $consulta = "SELECT vocales.nombres, vocales.`ap. paterno`, vocales.`ap. materno`,vocales.foto, vocales.email,
+  $consulta = "SELECT vocales.nombres, vocales.`ap. paterno`, vocales.`ap. materno`,vocales.foto, vocales.email, vocales.rama_id, vocales.tipo_id,
   ramas.descripcion as `rama`, tipos.descripcion as `tipo`, 
   cargos.nombre as `cargo`, 
   distritos.texto_id as `Num`, distritos.nombre as `Distrito`, 
@@ -92,7 +92,9 @@ function obtenerTarjeta($con, $id)
       "foto" => $registro['foto'],
       "email" => $registro['email'],
       "rama" => $registro['rama'],
+      "rama_id" => $registro['rama_id'],
       "tipo" => $registro['tipo'],
+      "tipo_id" => $registro['tipo_id'],
       "cargo" => $registro['cargo'],
       "numeroDist" => $registro['Num'],
       "distrito" => $registro['Distrito'],
@@ -173,8 +175,9 @@ function obtenerJunta($con, $id)
 }
 
 
-function borrarArchivo($foto){
-  
+function borrarArchivo($ruta)
+{
+  (touch($ruta)) ? unlink($ruta) : touch($ruta);
 }
 
 
