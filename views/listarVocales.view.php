@@ -7,7 +7,7 @@ include '../views/fijos/head.php';
         <div class="cuerpo-principal">
 
 
-            <?php foreach ($datosJl as $miembro) {
+            <!-- <?php foreach ($datosJl as $miembro) {
                 if ((int) ($miembro['distrito_id']) === 21) { ?>
                     <div class="encabezado">
                         <article id="" class="card thCard-jl">
@@ -43,7 +43,7 @@ include '../views/fijos/head.php';
                     <?php
                 }
             }
-            ?>
+            ?> -->
 
 
 
@@ -52,22 +52,22 @@ include '../views/fijos/head.php';
         <div class="encabezado">
 
             <article id="" class="card thCard">
-                <p>Vocal Ejecutivo</p>
+                <h3>Vocal Ejecutivo</h3>
             </article>
             <article id="" class="card thCard">
-                <p>Vocal Secretario</p>
+                <h3>Vocal Secretario</h3>
             </article>
             <article id="" class="card thCard">
-                <p>Vocal de Capacitación</p>
+                <h3>Vocal de Capacitación</h3>
             </article>
             <article id="" class="card thCard">
-                <p>Vocal de Organización</p>
+                <h3>Vocal de Organización</h3>
             </article>
             <article id="" class="card thCard">
-                <p>Vocal del Registro</p>
+                <h3>Vocal del Registro</h3>
             </article>
             <article id="" class="card thCard">
-                <p>JOSA</p>
+                <h3>JOSA</h3>
             </article>
         </div>
         <div class="cuerpo">
@@ -75,31 +75,31 @@ include '../views/fijos/head.php';
             <?php foreach ($datos as $vocal) {
                 if ((int) ($vocal['distrito_id']) > 0 && (int) ($vocal['distrito_id']) < 21) {
                     ?>
-                    <article id="<?php echo $vocal["id"]; ?>" class="card">
+            <article id="<?php echo $vocal["id"]; ?>" class="card">
 
-                        <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $vocal['cargo_id']; ?>"
-                            title="">
+                <img class="cover" src="<?php echo '../img/' . $vocal['foto']; ?>" alt="<? echo $vocal['cargo_id']; ?>"
+                    title="">
 
-                        <div class="details">
+                <div class="details">
 
-                            <div class="description">
-                                <p>
-                                    <?php echo $vocal['nombre']; ?>
-                                </p>
-                                <p>
-                                    <?php echo $vocal['paterno']; ?>
-                                </p>
-                                <p>
-                                    <?php echo $vocal['materno']; ?>
-                                </p>
-                                <p><span class="embellecer">
-                                        <?php echo $vocal['email']; ?>
-                                    </span></p>
+                    <div class="description">
+                        <p>
+                            <?php echo $vocal['nombre']; ?>
+                        </p>
+                        <p>
+                            <?php echo $vocal['paterno']; ?>
+                        </p>
+                        <p>
+                            <?php echo $vocal['materno']; ?>
+                        </p>
+                        <p><span class="embellecer">
+                                <?php echo $vocal['email']; ?>
+                            </span></p>
 
-                            </div>
-                        </div>
-                    </article>
-                    <?php
+                    </div>
+                </div>
+            </article>
+            <?php
                 }
             }
             ?>

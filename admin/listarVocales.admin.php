@@ -13,9 +13,9 @@ if (!$conexion) {
 // echo "<h1 style='color: green;'>Conectado</h1>";
 
 $data = obtenerVocales($conexion);
-// echo "<pre></pre>";
-// var_dump($data);
-// echo "<pre></pre>";
+echo "<pre></pre>";
+var_dump($data);
+echo "<pre></pre>";
 
 $dir = opendir('../views/admin/');
 while(false!=($archivo = readdir($dir))){

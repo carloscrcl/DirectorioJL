@@ -173,6 +173,10 @@ function obtenerJunta($con, $id)
 }
 
 
+function borrarArchivo($foto){
+  
+}
+
 
 
 

@@ -158,6 +158,11 @@ input[type="file"]::file-selector-button:hover {
   color: #fff;
   background: #2c89e5;
 }
+.desactivado {
+  color:#888;
+  background: #ddd;
+  cursor: none;
+}
 
 .enviar:hover {
   color: #fff;

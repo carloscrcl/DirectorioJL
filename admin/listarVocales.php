@@ -16,9 +16,9 @@ $datos = obtenerVocales($conexion);
 
 $datosJl = obtenerJunta($conexion, 21);
 
-echo "<pre>";
-var_dump($datosJl);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($datosJl);
+// echo "</pre>";
 
 
 require("../views/listarVocales.view.php")
