@@ -1,8 +1,8 @@
 <?php
 include("fijos/head.php");
-echo "<pre>";
-var_dump($datos[0]);
-echo "</pre>";
+// echo "<pre>";
+// var_dump($datos[0]);
+// echo "</pre>";
 
 $tipo = $datos[0]['tipo_id'];
 $rama = $datos[0]['rama_id'];
@@ -105,7 +105,7 @@ $rama = $datos[0]['rama_id'];
             </div>
 
             <div class="pie-tarjeta">
-                <button id="enviar" class="enviar" type="submit" id="enviar">Enviar</button>
+                <button id="enviar" class="" type="submit" id="enviar">Enviar</button>
                 <button id="cancelar" class="cancelar" type="button">Cancelar</button>
             </div>
 

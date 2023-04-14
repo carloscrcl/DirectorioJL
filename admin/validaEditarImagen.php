@@ -32,14 +32,14 @@ if ($longitud == 2)
     $ext = $nombreFotoExplode[$longitud - 1];
 
 $nuevoNombre = $rutaAnt[0] . "." . $ext;
+var_dump($nuevoNombre);
 
 
-
-// echo "<br>estoy aqui<br>";
-// echo "<pre>";
-// var_dump($ruta);
-// echo "</pre>";
-// var_dump($nuevoNombre);
+echo "<br>estoy aqui<br>";
+echo "<pre>";
+var_dump($ruta);
+echo "</pre>";
+var_dump($nuevoNombre);
 
 borrarArchivo('../img/' . $ruta);
 
@@ -51,26 +51,29 @@ if (!$conexion) {
 }
 // echo "Estamos procesando la consulta ...<br><br>";
 
-$consulta = "UPDATE vocales SET nombres='$nombre',
-                                 `ap. paterno`='$paterno',
-                                 `ap. materno`='$materno',
-                                 email='$email',
-                                 foto='$nuevoNombre',
-                                 tipo_id=$tipo, 
-                                 rama_id=$rama,
-                                 WHERE id=$id;";
+$consulta = "UPDATE vocales SET nombres=?,
+                                 `ap. paterno`=?,
+                                 `ap. materno`=?,
+                                 email=?,
+                                 foto=?,
+                                 tipo_id=?, 
+                                 rama_id=?
+                                 WHERE id=?";
+$sentencia = $conexion->prepare($consulta);
+$resultado = $sentencia->execute([$nombre, $paterno, $materno, $email, $nuevoNombre, $tipo, $rama, $id]); # Pasar en el mismo orden de los ?
 
-echo "<strong>$consulta</strong><br>";
-$query = $conexion->prepare($consulta);
+// echo "<strong>$consulta</strong><br>";
+// $query = $conexion->prepare($consulta);
 
-if ($query) {
-    echo "la consulta ha sido procesada ...";
-} else {
-    echo "ERROR...";
+if($resultado === TRUE) {
+    echo "Cambios guardados";
 }
+else echo "Algo salió mal. Por favor verifica que la tabla exista, así como el ID del usuario";
 
 
 
+
+header("Location: listarVocales.admin.php");
 
 
 

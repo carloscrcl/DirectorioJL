@@ -14,7 +14,10 @@ const nombre = "nombre",
 foto = "foto";
 
 botonEnviar = d.getElementById("enviar");
-botonEnviar.classList.add = "desactivado";
+console.log(botonEnviar);
+botonCancelar = d.getElementById("cancelar");
+botonEnviar.disabled = true;
+botonCancelar.disabled = true;
 
 const ajax = () => {
   let fd = new FormData();
@@ -98,13 +101,16 @@ d.addEventListener("DOMContentLoaded", (e) => {
   e.preventDefault();
 
   d.getElementById("imgLoaded").addEventListener("change", (e) => {
-    // botonEnviar.disabled = false;
+    botonEnviar.disabled = false;
+    botonCancelar.disabled = false;
+    // botonEnviar.classList.add = "activado";
     imgPreview(e, "#imgPrev");
   });
   formulario.addEventListener("submit", (e) => {
     e.preventDefault();
     ajax();
   });
+  botonCancelar;
 });
 
 function imgPreview(evento, idimg) {

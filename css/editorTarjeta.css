@@ -143,33 +143,44 @@ input[type="file"]::file-selector-button:hover {
   ;
 }
 
-.pie-tarjeta .enviar,
-.pie-tarjeta .cancelar {
+ #enviar,
+ #cancelar {
   width: 30%;
-  height: 3em;
+  height: 4em;
   border: none;
   box-shadow: 4px 2px 13px 3px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 4px;
 
 }
-
-.enviar {
-  color: #fff;
+#enviar{
   background: #2c89e5;
-}
-.desactivado {
-  color:#888;
-  background: #ddd;
-  cursor: none;
+  color:#ddd
 }
 
-.enviar:hover {
+#cancelar{
+  background: #d60887;
+  color:#ddd
+}
+
+
+#enviar:hover {
   color: #fff;
-  background: #0a5aaa;
+  background: #1573d0;
+}
+#enviar[disabled], #cancelar[disabled] {
+  color:#ddd;
+  background: #aaa;
+  cursor:auto
 }
 
-.cancelar:hover {
+.presionado{
+  transform:scale(98%);
+  transition: all .5s ease ;
+}
 
-  background: #a6abb1;
+
+#cancelar:hover {
+  color:#fff;
+  background: #aa0e6f;
 }
