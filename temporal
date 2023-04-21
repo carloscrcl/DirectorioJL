@@ -1,0 +1,31 @@
+<article id="<?php echo 'dir_' ; ?>" class="body_card direccion">
+                <p>
+                    <?php echo " No. " ; ?>
+                </p>
+                <p>
+                    <?php echo "" ; ?>
+                </p>
+
+                <p>
+                    <?php echo ""; ?>
+                </p>
+                <p>
+                    <?php echo ""; ?>
+                </p>
+                <p>
+                    <?php echo " Ver"; ?>
+                </p>
+            </article>
+            <!-- <article id="<?php echo 'tel_'. $direcciones[$i]['id']; ?>" class="body_card telefonos ">
+                <?php foreach($direcciones[$i]['tels'] as $tel):
+                if($tel != null || $tel !=""){?>
+                <p>
+                    <?php echo "(".$direcciones[$i]['lada'].")-". $tel; ?>
+                </p>
+                <?php
+                }else{
+                  continue;
+                }
+              endforeach;
+              ?>
+            </article> -->

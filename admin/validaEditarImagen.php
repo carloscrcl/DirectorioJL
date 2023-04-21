@@ -19,7 +19,7 @@ $ubicacionTemporal = $foto['tmp_name'];
 
 $nombreFoto = $foto['name'];
 $nombreFotoExplode = explode(".", $nombreFoto);
-var_dump($nombreFotoExplode);
+// var_dump($nombreFotoExplode);
 $rutaAnt = explode(".", $ruta);
 
 
@@ -32,14 +32,14 @@ if ($longitud == 2)
     $ext = $nombreFotoExplode[$longitud - 1];
 
 $nuevoNombre = $rutaAnt[0] . "." . $ext;
-var_dump($nuevoNombre);
+// var_dump($nuevoNombre);
 
 
 echo "<br>estoy aqui<br>";
 echo "<pre>";
 var_dump($ruta);
 echo "</pre>";
-var_dump($nuevoNombre);
+// var_dump($nuevoNombre);
 
 borrarArchivo('../img/' . $ruta);
 
@@ -66,11 +66,13 @@ $resultado = $sentencia->execute([$nombre, $paterno, $materno, $email, $nuevoNom
 // $query = $conexion->prepare($consulta);
 
 if($resultado === TRUE) {
-    echo "Cambios guardados";
+    $msj =  "Cambios guardados";
 }
-else echo "Algo salió mal. Por favor verifica que la tabla exista, así como el ID del usuario";
+else $msj =  "Algo salió mal. Por favor verifica que la tabla exista, así como el ID del usuario";
 
+if($tipo =="2"){
 
+}
 
 
 header("Location: listarVocales.admin.php");

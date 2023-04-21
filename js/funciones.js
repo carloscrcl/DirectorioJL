@@ -17,7 +17,7 @@ botonEnviar = d.getElementById("enviar");
 console.log(botonEnviar);
 botonCancelar = d.getElementById("cancelar");
 botonEnviar.disabled = true;
-botonCancelar.disabled = true;
+botonCancelar.disabled = false;
 
 const ajax = () => {
   let fd = new FormData();
@@ -110,7 +110,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
     e.preventDefault();
     ajax();
   });
-  botonCancelar;
+  botonCancelar.addEventListener("click", (e) => {
+    console.log("Cancelar");
+    location.href = "../admin/listarVocales.admin.php";
+  });
 });
 
 function imgPreview(evento, idimg) {

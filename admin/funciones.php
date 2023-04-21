@@ -181,6 +181,52 @@ function borrarArchivo($ruta)
 }
 
 
+function obtenerDirecciones($conexion){
+
+$consulta = "SELECT d.*, t.lada1, t.telefono1, t.telefono2, t.telefono3
+FROM direcciones d, telefonos t
+WHERE d.direccion_id = t.direccion_id
+ORDER BY d.direccion_id ASC ";
+
+$query = $conexion->prepare($consulta);
+
+$data = [];
+  if (!$query) {
+    echo "Funciones: No se esta ejecutando la consulta<br> ";
+  } else {
+
+    $query = $conexion->prepare($consulta);
+    $query->execute();
+
+
+    // if($query->rowCount()>0){
+    while ($registro = $query->fetch(PDO::FETCH_ASSOC)) {
+
+      $vocal = [
+        "id" => $registro['direccion_id'],
+        "cabecera" => $registro['cabecera'],
+        "prefijo" => $registro['prefijo'],
+        "calle" => $registro['calle'],
+        "No" => $registro['numero'],
+        "col" => $registro['colonia'],
+        "referencia" => $registro['entre_calles'],
+        "cp" => $registro['cp'],
+        "lada" => $registro['lada1'],
+        "tels" => array ($registro['telefono1'], $registro['telefono2'], $registro['telefono3'])
+        
+
+      ];
+      array_push($data, $vocal);
+    }
+
+
+  }
+  return ($data) ? $data : "no tengo datos";
+
+}
+
+
+
 
 
 ?>
