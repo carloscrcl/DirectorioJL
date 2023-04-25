@@ -18,9 +18,9 @@ $datosJl = obtenerJunta($conexion, 21);
 
 $direcciones = obtenerDirecciones($conexion);
 
-echo "<pre>";
-var_dump($datosJl);
-echo "</pre>";
+// // echo "<pre>";
+// var_dump($datosJl);
+// echo "</pre>";
 
 
 require("../views/listarVocales.view.php")
