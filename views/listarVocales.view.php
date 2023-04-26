@@ -22,7 +22,7 @@ include '../views/fijos/head.php';
 
                 <?php foreach ($datosJl as $miembro) {
             if ((int) ($miembro['distrito_id']) === 21) { ?>
-                <article class="tarjeta">
+                <article class="tarjeta_gris">
                     <div class="thEncabezado">
                         <p class="card_jl-cargo">
                             <?php echo $miembro['cargo']; ?>
@@ -38,25 +38,33 @@ include '../views/fijos/head.php';
                         <div class="details">
 
                             <div class="description jl">
-                                <?php if($miembro['tipo_id']=='2' && $miembro['rama_id']=='3'):?>
+                                <?php 
+                                    $tipo="";
+                                    if($miembro['tipo_id']=='2' && $miembro['rama_id']=='3'):?>
                                 <p class="encargado_admin">
-                                    <?php echo "ENCARGADO"; ?>
+                                    <?php echo "ENCARGADO"; $tipo = "hp"; ?>
                                 </p>
 
                                 <?php
                                  endif;
-                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='1'):?>
+                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='2'):?>
                                 <p class="encargado_spen">
-                                    <?php "ENCARGADO"; ?>
+                                    <?php echo "ENCARGADO"; $tipo = "pp";?>
                                 </p>
                                 <?php endif?>
-                                <p>
+                                <?php
+                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='1'):?>
+                                <p class="encargado_spen">
+                                    <?php echo "ENCARGADO"; ?>
+                                </p>
+                                <?php endif?>
+                                <p class="<?php echo $tipo;?>">
                                     <?php echo $miembro['nombre']; ?>
                                 </p>
-                                <p>
+                                <p class="<?php echo $tipo;?>">
                                     <?php echo $miembro['paterno']; ?>
                                 </p>
-                                <p>
+                                <p class="<?php echo $tipo;?>">
                                     <?php echo $miembro['materno']; ?>
                                 </p>
                                 <p><span class="embellecer">
@@ -103,12 +111,12 @@ include '../views/fijos/head.php';
                 </article>
                 <article id="" class="telefonos">
                     <h4 class="bolder">Teléfono Junta Local</h4>
-                    <p>(228)4816490</p>
+                    <p>(228)-4816490</p>
                 </article>
                 <article id="" class="telefonos">
                     <h4 class="bolder">R.F.E</h4>
-                    <p>(228)182084</p>
-                    <p>(228)182080</p>
+                    <p>(228)-182084</p>
+                    <p>(228)-182080</p>
                 </article>
             </div>
         </div>
@@ -188,13 +196,33 @@ include '../views/fijos/head.php';
                         <div class="body_card_right">
 
                             <div class="body_card-right-details">
-                                <p>
+                                <?php
+                                     $tipo="";
+                                    if($vocales[$j]['tipo_id']=='2' && $vocales[$j]['rama_id']=='3'):?>
+                                <p class="encargado_admin">
+                                    <?php echo "ENCARGADO"; $tipo = "hp";?>
+                                </p>
+
+                                <?php
+                                 endif;
+                                 if($vocales[$j]['tipo_id']=='2' && $vocales[$j]['rama_id']=='2'):?>
+                                <p class="encargado_spen">
+                                    <?php echo "ENCARGADO"; $tipo = "pp";?>
+                                </p>
+                                <?php endif;?>
+                                <?php
+                                 if($vocales[$j]['tipo_id']=='2' && $vocales[$j]['rama_id']=='1'):?>
+                                <p class="encargado_spen">
+                                    <?php echo "ENCARGADO"; ?>
+                                </p>
+                                <?php endif;?>
+                                <p class="<?php echo $tipo;?>">
                                     <?php echo $vocales[$j]['nombre']; ?>
                                 </p>
-                                <p>
+                                <p class="<?php echo $tipo;?>">
                                     <?php echo $vocales[$j]['paterno']; ?>
                                 </p>
-                                <p>
+                                <p class="<?php echo $tipo;?>">
                                     <?php echo $vocales[$j]['materno']; ?>
                                 </p>
                                 <p><span class="embellecer">
@@ -205,6 +233,7 @@ include '../views/fijos/head.php';
                                         <?php echo "@ine.mx"; ?>
                                     </span>
                                 </p>
+
 
                             </div>
                             <!--FIN DETAILS-->

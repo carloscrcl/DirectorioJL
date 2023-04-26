@@ -32,25 +32,33 @@ include("../views/fijos/head.php");
                             <div class="details">
 
                                 <div class="description jl">
-                                    <?php if($miembro['tipo_id']=='2' && $miembro['rama_id']=='3'):?>
+                                    <?php 
+                                    $tipo="";
+                                    if($miembro['tipo_id']=='2' && $miembro['rama_id']=='3'):?>
                                     <p class="encargado_admin">
-                                        <?php echo "ENCARGADO"; ?>
+                                        <?php echo "ENCARGADO"; $tipo = "hp"; ?>
                                     </p>
 
                                     <?php
                                  endif;
-                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='1'):?>
+                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='2'):?>
                                     <p class="encargado_spen">
-                                        <?php "ENCARGADO"; ?>
+                                        <?php echo "ENCARGADO"; $tipo = "pp";?>
                                     </p>
                                     <?php endif?>
-                                    <p>
+                                    <?php
+                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='1'):?>
+                                    <p class="encargado_spen">
+                                        <?php echo "ENCARGADO"; ?>
+                                    </p>
+                                    <?php endif?>
+                                    <p class="<?php echo $tipo;?>">
                                         <?php echo $miembro['nombre']; ?>
                                     </p>
-                                    <p>
+                                    <p class="<?php echo $tipo;?>">
                                         <?php echo $miembro['paterno']; ?>
                                     </p>
-                                    <p>
+                                    <p class="<?php echo $tipo;?>">
                                         <?php echo $miembro['materno']; ?>
                                     </p>
                                     <p><span class="embellecer">
@@ -152,13 +160,33 @@ include("../views/fijos/head.php");
                             <div class="body_card_right">
 
                                 <div class="body_card-right-details">
-                                    <p>
+                                    <?php
+                                     $tipo="";
+                                    if($vocales[$j]['tipo_id']=='2' && $vocales[$j]['rama_id']=='3'):?>
+                                    <p class="encargado_admin">
+                                        <?php echo "ENCARGADO"; $tipo = "hp";?>
+                                    </p>
+
+                                    <?php
+                                 endif;
+                                 if($vocales[$j]['tipo_id']=='2' && $vocales[$j]['rama_id']=='2'):?>
+                                    <p class="encargado_spen">
+                                        <?php echo "ENCARGADO"; $tipo = "pp";?>
+                                    </p>
+                                    <?php endif;?>
+                                    <?php
+                                 if($vocales[$j]['tipo_id']=='2' && $vocales[$j]['rama_id']=='1'):?>
+                                    <p class="encargado_spen">
+                                        <?php echo "ENCARGADO"; ?>
+                                    </p>
+                                    <?php endif;?>
+                                    <p class="<?php echo $tipo;?>">
                                         <?php echo $vocales[$j]['nombre']; ?>
                                     </p>
-                                    <p>
+                                    <p class="<?php echo $tipo;?>">
                                         <?php echo $vocales[$j]['paterno']; ?>
                                     </p>
-                                    <p>
+                                    <p class="<?php echo $tipo;?>">
                                         <?php echo $vocales[$j]['materno']; ?>
                                     </p>
                                     <p><span class="embellecer">
