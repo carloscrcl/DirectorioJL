@@ -8,17 +8,17 @@ include '../views/fijos/head.php';
         <div class="tarjetas_jl">
 
 
-            <div class="columna1 .flex">
+            <div class="columna1 .flex dif">
                 <article id="" class="principal-thCard">
                     <h3>Adscripción</h3>
                 </article>
                 <div class="">
-                    <p>Junta Local Ejecutiva de Veracruz</p>
+                    <h4 class="bolder">Junta Local Ejecutiva de Veracruz</h4>
                 </div>
 
             </div>
 
-            <div class="columna_dif2">
+            <div class="columna_dif2 dif">
 
                 <?php foreach ($datosJl as $miembro) {
             if ((int) ($miembro['distrito_id']) === 21) { ?>
@@ -29,15 +29,27 @@ include '../views/fijos/head.php';
                         </p>
                     </div>
                     <div id="<?php echo $miembro['id']; ?>" class="card_jl-cuerpo">
-                        <div class="card_jl-img">
+                        <div class="body_card-left">
 
-                            <img class="cover" src="<?php echo '../img/' . $miembro['foto']; ?>"
+                            <img class="body_card-img" src="<?php echo '../img/' . $miembro['foto']; ?>"
                                 alt="<?php echo $miembro['cargo']; ?>" title="">
                         </div>
 
                         <div class="details">
 
-                            <div class="description">
+                            <div class="description jl">
+                                <?php if($miembro['tipo_id']=='2' && $miembro['rama_id']=='3'):?>
+                                <p class="encargado_admin">
+                                    <?php echo "ENCARGADO"; ?>
+                                </p>
+
+                                <?php
+                                 endif;
+                                 if($miembro['tipo_id']=='2' && $miembro['rama_id']=='1'):?>
+                                <p class="encargado_spen">
+                                    <?php "ENCARGADO"; ?>
+                                </p>
+                                <?php endif?>
                                 <p>
                                     <?php echo $miembro['nombre']; ?>
                                 </p>
@@ -65,19 +77,38 @@ include '../views/fijos/head.php';
             }
           ?>
             </div>
-            <div class="columna3">
+            <div class="columna3 dif">
                 <article id="" class="principal-thCard">
                     <h3>Direccion</h3>
                 </article>
-                <div class="">
+                <div class="direccion">
+                    <h4 class="bolder">JUNTA LOCAL EJECUTIVA</h4>
                     <p>Av. Manuel Avila Camacho No. 119;</p>
                     <p>Zona Centro;</p>
+                    <p>Cp: 91000;</p>
+                    <p>Xalapa, ver</p>
+                </div>
+                <div class="direccion">
+                    <h4 class="bolder">REGISTRO FEDERAL DE ELECTORES</h4>
+                    <p>C. Manlio F. Altamirano No. 114;</p>
+                    <p>Zona Centro;</p>
+                    <p>Cp: 91000;</p>
+                    <p>Xalapa, ver</p>
                 </div>
 
             </div>
-            <div class="columna4">
+            <div class="columna4 dif">
                 <article id="" class="principal-thCard">
                     <h3>Teléfonos</h3>
+                </article>
+                <article id="" class="telefonos">
+                    <h4 class="bolder">Teléfono Junta Local</h4>
+                    <p>(228)4816490</p>
+                </article>
+                <article id="" class="telefonos">
+                    <h4 class="bolder">R.F.E</h4>
+                    <p>(228)182084</p>
+                    <p>(228)182080</p>
                 </article>
             </div>
         </div>

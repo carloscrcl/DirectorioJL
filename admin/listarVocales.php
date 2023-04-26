@@ -15,7 +15,6 @@ if (!$conexion) {
 $vocales = obtenerVocales($conexion);
 
 $datosJl = obtenerJunta($conexion, 21);
-
 $direcciones = obtenerDirecciones($conexion);
 
 // // echo "<pre>";

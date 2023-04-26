@@ -12,10 +12,12 @@ if (!$conexion) {
 }
 // echo "<h1 style='color: green;'>Conectado</h1>";
 
-$data = obtenerVocales($conexion);
+$vocales = obtenerVocales($conexion);
+$datosJl = obtenerJunta($conexion, 21);
 // echo "<pre></pre>";
 // var_dump($data);
 // echo "<pre></pre>";
+$direcciones = obtenerDirecciones($conexion);
 
 $dir = opendir('../views/admin/');
 while (false != ($archivo = readdir($dir))) {

@@ -113,7 +113,7 @@ function obtenerTarjeta($con, $id)
 function obtenerJunta($con, $id)
 {
   $consulta = "SELECT vocales.id, vocales.nombres, vocales.`ap. paterno`, vocales.`ap. materno`,vocales.foto, vocales.email,
-  ramas.descripcion as `rama`, tipos.descripcion as `tipo`, 
+  ramas.descripcion as `rama`, ramas.rama_id , tipos.descripcion as `tipo`, tipos.id as `tipo_id`,
   cargos.nombre as `cargo`, 
   distritos.texto_id as `Num`, distritos.nombre as `Distrito`, distritos.distrito_id as dist,
   vocalias.ext as `ext`, vocalias.descripcion as `Vocalia` 
@@ -156,7 +156,9 @@ function obtenerJunta($con, $id)
         "foto" => $registro['foto'],
         "email" => $registro['email'],
         "rama" => $registro['rama'],
+        "rama_id" => $registro['rama_id'],
         "tipo" => $registro['tipo'],
+        "tipo_id" => $registro['tipo_id'],
         "cargo" => $registro['cargo'],
         "numeroDist" => $registro['Num'],
         "distrito" => $registro['Distrito'],
